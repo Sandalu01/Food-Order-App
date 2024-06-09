@@ -14,8 +14,15 @@
     padding: 0 10px;
 
 ion-item:first-child,ion-item:nth-child(2){
-    margin-bottom: 20px;
+    margin-bottom: 20px;    
 
+
+}
+ion-item{
+    border: 1px solid white;
+    border-radius: 4px;
+    opacity: 0.9;
+    background: transparent;
 }
 
 }

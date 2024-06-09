@@ -13,8 +13,20 @@ const routes: Routes = [
     loadChildren: () => import('./Screnn/register/register.module').then( m => m.RegisterPageModule)
   },
   {
-    path: 'dashboard',
+     path: 'dashboard',
     loadChildren: () => import('./Screnn/dashboard/dashboard.module').then( m => m.DashboardPageModule)
+  },
+  {
+    path: 'products',
+    loadChildren: () => import('./Screnn/products/products.module').then( m => m.ProductsPageModule)
+  },
+  {
+    path: 'foods',
+    loadChildren: () => import('./Screnn/foods/foods.module').then( m => m.FoodsPageModule)
+  },
+  {
+    path: 'location',
+    loadChildren: () => import('./Screnn/location/location.module').then( m => m.LocationPageModule)
   }
 
 ];
