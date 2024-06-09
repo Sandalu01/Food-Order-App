@@ -7,9 +7,16 @@
   </ion-toolbar>
 </ion-header>
 
-<div class="container">
-  <ion-content >
 
+
+  <ion-content >
+    <!-- reusable component -->
+    <div class="container">
+      <div *ngFor="let product of products">
+        <app-product-card [product]="product"></app-product-card>
+      </div>
+
+  </div>
   </ion-content>
-</div>
+
 

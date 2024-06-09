@@ -7,14 +7,22 @@ import { IonicModule } from '@ionic/angular';
 import { ProductsPageRoutingModule } from './products-routing.module';
 
 import { ProductsPage } from './products.page';
+import { ProductCardComponent } from '../product-card/product-card.component';  // Adjust path as needed
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ProductsPageRoutingModule
+    ProductsPageRoutingModule,
+    ProductCardComponent
+    
+
   ],
-  declarations: [ProductsPage]
+  declarations: [ProductsPage,
+    ProductCardComponent // Add the component here
+  ],
+
 })
 export class ProductsPageModule {}
+
