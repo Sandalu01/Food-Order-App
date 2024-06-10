@@ -27,6 +27,10 @@ const routes: Routes = [
   {
     path: 'location',
     loadChildren: () => import('./Screnn/location/location.module').then( m => m.LocationPageModule)
+  },
+  {
+    path: 'new-product',
+    loadChildren: () => import('./Screnn/new-product/new-product.module').then( m => m.NewProductPageModule)
   }
 
 ];
