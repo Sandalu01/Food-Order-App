@@ -10,21 +10,20 @@
 <ion-content>
   <div class="container">
     <form >
- 
         <ion-item>
-          <ion-label position="floating" >Name</ion-label>
-          <ion-input placeholder="Thushan ekanayaka"></ion-input>
+          <ion-label position="floating" >name</ion-label>
+          <ion-input input="text" fill="fill"[(ngModel)]="name" name="kamal"></ion-input>
         </ion-item>
         <ion-item>
-          <ion-label position="floating">Email</ion-label>
-          <ion-input type="email" placeholder="sandaluthushan@gmai.com"></ion-input>
+          <ion-label position="floating">email</ion-label>
+          <ion-input type="email" fill="fill"[(ngModel)]="email" name="something"></ion-input>
         </ion-item>
         <ion-item>
-          <ion-label position="floating">Password</ion-label>
-          <ion-input  type="password"></ion-input>
+          <ion-label position="floating">password</ion-label>
+          <ion-input  type="password" fill="fill"[(ngModel)]="password" name="something"></ion-input>
         </ion-item>
    
-      <ion-button expand="full" class="botton-color" routerLink="/dashboard">Sign Up</ion-button>
+      <ion-button expand="full" class="botton-color" (click)="login()">Sign Up</ion-button>
       <ion-button expand="full" color="medium" routerLink="/register" >Register</ion-button>
     </form>
   </div>

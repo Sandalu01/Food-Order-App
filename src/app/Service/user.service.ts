@@ -11,16 +11,17 @@ export class UserService {
 
   constructor(private firestore: AngularFirestore, private firebaseauth: AngularFireAuth) { }
 
+  //fire- base -authentification
   Register(email:string,password:string):Promise<any> {
     return this.firebaseauth.createUserWithEmailAndPassword(
       email,password)
   }
 
-
-  // Login(email:string,password:string):Promise<any> {
-  //   return this.firebaseauth.signInWithEmailAndPassword(
-  //     email,password)
-  // }
+  //fire- base -authentification
+  login(email:string,password:string):Promise<any> {
+    return this.firebaseauth.signInWithEmailAndPassword(
+      email,password)
+  }
 
   //save the data in the firestore
 

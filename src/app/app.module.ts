@@ -8,12 +8,15 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+import { AngularFireStorageModule } from '@angular/fire/compat/storage';
+
 
 
 //file upload
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { environment } from '../environments/environment';
+
 
 
 
@@ -32,7 +35,10 @@ import { TabBarComponent } from './Screnn/tab-bar/tab-bar.component';
       AppRoutingModule,
       AngularFireAuthModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
-    AngularFirestoreModule,  // Add Firestore module here
+    AngularFirestoreModule, 
+    AngularFireStorageModule
+
+   // Add Firestore module here
   ],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],

@@ -33,7 +33,7 @@ describe('AppComponent', () => {
     expect(menuItems[0].textContent).toContain('Inbox');
     expect(menuItems[1].textContent).toContain('Outbox');
   });
-
+  
   it('should have urls', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
