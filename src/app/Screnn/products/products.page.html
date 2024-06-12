@@ -14,19 +14,23 @@
   <ion-content >
     <!-- you have to used reusable component -->
     <div class="container">
-    <ion-card>
+    <ion-card *ngFor="let tempprod of products">
+      <img src="{{tempprod?.image}}" alt="">
       <ion-card-header>
-        <ion-card-title>Card Title</ion-card-title>
-        <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+        <ion-card-title>{{tempprod?.name}}</ion-card-title>
+        <ion-card-subtitle>{{tempprod?.cost}}</ion-card-subtitle>
       </ion-card-header>
     
       <ion-card-content>
-        Here's a small text description for the card content. Nothing more, nothing less.
+        {{tempprod?.description}}
       </ion-card-content>
     </ion-card>
 
+    
+
  <!-- you have to used reusable component -->
     <ion-card>
+      <img src="" alt="">
       <ion-card-header>
         <ion-card-title>Card Title</ion-card-title>
         <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
