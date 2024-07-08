@@ -36,7 +36,8 @@ import { TabBarComponent } from './Screnn/tab-bar/tab-bar.component';
       AngularFireAuthModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFirestoreModule, 
-    AngularFireStorageModule
+    AngularFireStorageModule,
+    
 
    // Add Firestore module here
   ],

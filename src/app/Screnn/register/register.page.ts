@@ -13,7 +13,7 @@ export class RegisterPage implements OnInit {
   email!:string;
   password!:string;
   fullname!:string;
-
+ 
   //user service pass into consructor register
 
   constructor(private userservice:UserService,private route:Router) { } 

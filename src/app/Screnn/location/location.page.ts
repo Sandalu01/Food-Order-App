@@ -1,10 +1,7 @@
 import { MapType } from '@angular/compiler';
 import { Component, OnInit,NgZone,ElementRef,ViewChild, Renderer2 } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-
 declare var google: any;
-
-
 @Component({
   selector: 'app-location',
   templateUrl: './location.page.html',
@@ -16,22 +13,14 @@ export class LocationPage implements OnInit {
 
   locationdata:any ;
   map:any; 
-
   constructor(private ngzone:NgZone,private render:Renderer2,private elementref:ElementRef) { }
-
   ngAfterViewInit():void{
     this.loadmap();
 
   }
-
-
   ngOnInit() {
-
-
- 
-    
+  
   }
-
   loadmap(){
     this.ngzone.run(() => {
       this.map = new google.maps.Maps.LatLng(0,0);
@@ -41,12 +30,11 @@ export class LocationPage implements OnInit {
         MapTypeId:google.maps.MapTypeId.ROADMAP
       }
 
-      this.map=new google.maps.Map(this.elementref.nativeElement.querySelector(".map-Container"),option);
+      this.map=new google.maps.Map(this.elementref.nativeElement. querySelector(".map-Container"),option);
       
     })
 
   }
-
   getcurrentloacation(){
     if("geolocation" in navigator){
       navigator.geolocation.getCurrentPosition((position)=>{
@@ -62,8 +50,6 @@ export class LocationPage implements OnInit {
           map:this.map,
           Title:"Google Maps Location"
         })
-
-
       }
       
     ,)}
