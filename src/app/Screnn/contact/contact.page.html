@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Contact Us</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div class="container">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Contact Us</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-item>
+          <ion-label position="stacked">Name</ion-label>
+          <ion-input [(ngModel)]="contactName" name="contactName" required></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked">Email</ion-label>
+          <ion-input [(ngModel)]="contactEmail" name="contactEmail" type="email" required></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked">Phone Number</ion-label>
+          <ion-input [(ngModel)]="contactPhone" name="contactPhone" type="tel" required></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked">Message</ion-label>
+          <ion-textarea [(ngModel)]="contactMessage" name="contactMessage" required></ion-textarea>
+        </ion-item>
+        <ion-button expand="full" type="submit" (click)="submitContactForm()">Send Message</ion-button>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Contact Information</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-item lines="none">
+          <ion-icon name="location-outline" slot="start"></ion-icon>
+          <ion-label>123 Food Street, Food City</ion-label>
+        </ion-item>
+        <ion-item lines="none">
+          <ion-icon name="call-outline" slot="start"></ion-icon>
+          <ion-label>(123) 456-7890</ion-label>
+        </ion-item>
+        <ion-item lines="none">
+          <ion-icon name="mail-outline" slot="start"></ion-icon>
+          <ion-label>supporfoodorderapp</ion-label>
+        </ion-item>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

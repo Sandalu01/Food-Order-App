@@ -31,6 +31,10 @@ const routes: Routes = [
   {
     path: 'new-product',
     loadChildren: () => import('./Screnn/new-product/new-product.module').then( m => m.NewProductPageModule)
+  },
+  {
+    path: 'contact',
+    loadChildren: () => import('./Screnn/contact/contact.module').then( m => m.ContactPageModule)
   }
 
 ];
