@@ -14,6 +14,18 @@ export class ContactPage implements OnInit {
   constructor() { }
 
   ngOnInit() {
+ 
   }
+  submitContactForm()
+    {
+      
+      console.log(this.contactName);
+      console.log(this.contactEmail);
+      console.log(this.contactPhone);
+      console.log(this.contactMessage);
+
+  }
+
+
 
 }
