@@ -3,24 +3,35 @@
     <ion-buttons slot="start">
       <ion-back-button defaultHref="/products"></ion-back-button>
     </ion-buttons>
-    <ion-title>new-product</ion-title>
+    <ion-title>New Product</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-<div class="container">
-  
-  <input type="file" (change)="selectfile($event)"/>
-  <br>
-  <label for="productName">Product Name:</label>
-  <input type="text" [(ngModel)]="productName" name="something"/>
-  <br>
-  <label for="productPrice">Product Price:</label>
-  <input type="text" [(ngModel)]="productCost" name="something"/>
-  <br>
-  <label for="productDescription">Product Description:</label>
-  <input type="text" [(ngModel)]="productDescription" name="something"/>
-  <br>
-  <ion-button  expand="full" type="submit" (click)="upload()" >Upload product</ion-button>
-</div>
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div class="container">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Add New Product</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-item>
+          <ion-label position="stacked">Product Image</ion-label>
+          <input type="file" (change)="selectfile($event)" />
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked">Product Name</ion-label>
+          <ion-input [(ngModel)]="productName" name="productName"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked">Product Price</ion-label>
+          <ion-input [(ngModel)]="productCost" name="productCost" type="number"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked">Product Description</ion-label>
+          <ion-textarea [(ngModel)]="productDescription" name="productDescription"></ion-textarea>
+        </ion-item>
+        <ion-button expand="full" type="submit" (click)="upload()">Upload Product</ion-button>
+      </ion-card-content>
+    </ion-card>
+  </div>
 </ion-content>
