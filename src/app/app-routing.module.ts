@@ -35,6 +35,10 @@ const routes: Routes = [
   {
     path: 'contact',
     loadChildren: () => import('./Screnn/contact/contact.module').then( m => m.ContactPageModule)
+  },
+  {
+    path: 'about-us',
+    loadChildren: () => import('./Screnn/about-us/about-us.module').then( m => m.AboutUsPageModule)
   }
 
 ];
