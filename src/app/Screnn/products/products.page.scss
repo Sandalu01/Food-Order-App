@@ -1,20 +1,23 @@
-.new-product{
-    width: 40px;
-    height: 40px;
-    background-color:blue;
-    border-radius: 100%;
+.new-product {
+    width: 60px;
+    height: 60px;
+    background-color: #1305da; /* Use a more visually appealing blue */
+    border-radius: 50%;
     position: fixed;
-    bottom:20px;
-    right:20px;
-    z-index: 1;
-    color:white;
-    font-size:30px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 20px 0px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
 
-
-    
-
+.new-product:hover {
+    background-color: #2cd61c; /* Slightly darker blue on hover */
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 15px 30px 0px;
 }
