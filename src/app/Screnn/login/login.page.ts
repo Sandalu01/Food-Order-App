@@ -2,9 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { UserService } from 'src/app/Service/user.service';
 import { AngularFirestore } from '@angular/fire/compat/firestore';
 import { Router } from '@angular/router';
-import { QueryDocumentSnapshot } from '@angular/fire/firestore';
 
-import { doc } from 'firebase/firestore';
+
+
 
 @Component({
   selector: 'app-login',
