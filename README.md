@@ -30,12 +30,19 @@ The New Product Page allows admins or authorized users to add new food items to 
 
 ### Home Page
 The Home Page displays a list of available food items. Users can browse through different categories, view detailed descriptions, and add items to their cart.
+![image](https://github.com/Sandalu01/Food-Order-App/assets/108582011/900e0ef7-ab04-4f22-a5c5-9cf8bc98cfce)
+
 
 ### Contact Page
 The Contact Page provides a way for users to get in touch with support. It includes a form where users can enter their name, email, and message.
+![image](https://github.com/Sandalu01/Food-Order-App/assets/108582011/3b74b0fc-0406-44cb-bf64-62ebd1900329)
+
+
+
 
 ### About Us Page
 The About Us Page provides information about the app, its purpose, and the team behind it. It may include sections like the app’s mission, vision, and a brief history.
+![image](https://github.com/Sandalu01/Food-Order-App/assets/108582011/60be23d1-014b-4428-a76a-f430b5b7474d)
 
 ## Installation
 To get started with the app, follow these steps:
