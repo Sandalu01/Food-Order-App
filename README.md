@@ -14,11 +14,15 @@ This is a food ordering application built using the Ionic framework. The app all
 ## Pages
 
 ### Register Page
-![Register Page](path/to/register-page-image.png)
+![image](https://github.com/Sandalu01/Food-Order-App/assets/108582011/88490d7b-949f-405b-a0fb-9489ee42688a)
+
+
 Allows new users to sign up by providing their full name, email, and password.
 
 ### Login Page
-![Login Page](path/to/login-page-image.png)
+![image](https://github.com/Sandalu01/Food-Order-App/assets/108582011/73aa77d2-7a46-4e75-950e-427ebd23564f)
+
+
 Allows existing users to log in by entering their name, email, and password.
 
 ### New Product Page
