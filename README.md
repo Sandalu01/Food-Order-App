@@ -45,6 +45,7 @@ The Contact Page provides a way for users to get in touch with support. It inclu
 
 ### About Us Page
 The About Us Page provides information about the app, its purpose, and the team behind it. It may include sections like the app’s mission, vision, and a brief history.
+
 ![image](https://github.com/Sandalu01/Food-Order-App/assets/108582011/60be23d1-014b-4428-a76a-f430b5b7474d)
 
 ## Installation
