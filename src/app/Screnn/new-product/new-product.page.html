@@ -3,7 +3,7 @@
     <ion-buttons slot="start">
       <ion-back-button defaultHref="/products"></ion-back-button>
     </ion-buttons>
-    <ion-title>New Product</ion-title>
+    <ion-title>Users Foods</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -11,26 +11,26 @@
   <div class="container">
     <ion-card>
       <ion-card-header>
-        <ion-card-title>Add New Product</ion-card-title>
+        <ion-card-title>Add New User Foods</ion-card-title>
       </ion-card-header>
       <ion-card-content>
         <ion-item>
-          <ion-label position="stacked">Product Image</ion-label>
+          <ion-label position="stacked">Food Image</ion-label>
           <input type="file" (change)="selectfile($event)" />
         </ion-item>
         <ion-item>
-          <ion-label position="stacked">Product Name</ion-label>
+          <ion-label position="stacked">Food Name</ion-label>
           <ion-input [(ngModel)]="productName" name="productName"></ion-input>
         </ion-item>
         <ion-item>
-          <ion-label position="stacked">Product Price</ion-label>
+          <ion-label position="stacked">Estimate  Price</ion-label>
           <ion-input [(ngModel)]="productCost" name="productCost" type="number"></ion-input>
         </ion-item>
         <ion-item>
-          <ion-label position="stacked">Product Description</ion-label>
+          <ion-label position="stacked">Food Description</ion-label>
           <ion-textarea [(ngModel)]="productDescription" name="productDescription"></ion-textarea>
         </ion-item>
-        <ion-button expand="full" type="submit" (click)="upload()">Upload Product</ion-button>
+        <ion-button expand="full" type="submit" (click)="upload()">Upload Food</ion-button>
       </ion-card-content>
     </ion-card>
   </div>
